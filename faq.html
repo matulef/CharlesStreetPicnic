@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FAQ — Charles Street Picnic</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Custom design tokens -->
+<style>
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 15%;
+
+  --primary: 0 75% 55%;
+  --primary-foreground: 0 0% 98%;
+
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 75% 55%;
+
+  --muted: 0 0% 94%;
+  --muted-foreground: 0 0% 45%;
+
+  --accent: 210 20% 85%;
+  --accent-foreground: 0 0% 15%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 0 0% 88%;
+  --input: 0 0% 92%;
+  --ring: 0 75% 55%;
+
+  --picnic-red: 0 75% 55%;
+  --picnic-burgundy: 0 60% 40%;
+  --picnic-pink: 0 45% 85%;
+  --picnic-cream: 45 25% 95%;
+  --picnic-navy: 215 25% 25%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+</style>
+
+  </head>
+  <body class="min-h-screen flex flex-col bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
+<nav class="bg-[hsl(var(--card))] border-b border-[hsl(var(--border))]">
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="text-xl font-semibold text-[hsl(var(--primary))]">Picnic&nbsp;Table</a>
+    <ul class="flex gap-6 text-sm font-medium">
+      <li><a class="hover:text-[hsl(var(--primary))]" href="index.html">Home</a></li>
+      <li><a class="hover:text-[hsl(var(--primary))]" href="faq.html">FAQ</a></li>
+      <li><a class="hover:text-[hsl(var(--primary))]" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <main class="flex-1 max-w-3xl mx-auto w-full px-4 py-12 space-y-8">
+    <h1 class="text-3xl font-bold">Frequently Asked Questions</h1>
+    <dl class="space-y-6">
+      <div>
+        <dt class="font-semibold">What is this picnic table?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">A public art installation inviting anyone to pause, share a meal, or start a conversation—right where you wouldn't expect a picnic table to be.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Do I need to reserve a spot?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">Nope. First come, first served. Just be kind and share the space.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">How long will it be here?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">The table will be in place from June 1 – September 30, 2025 (weather permitting).</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Can I bring food?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">Please do! Pack your lunch or grab take‑out locally. Just clean up after yourself.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">Who built it?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">Artist Alex Doe, with reclaimed wood from the old Charles Street bridge.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">How can I stay updated?</dt>
+        <dd class="mt-1 text-[hsl(var(--muted-foreground))]">Leave your email in the contact form and we’ll ping you with any news or events.</dd>
+      </div>
+    </dl>
+  </main>
+
+  <footer class="bg-[hsl(var(--card))] border-t border-[hsl(var(--border))] text-center py-6 text-sm text-[hsl(var(--muted-foreground))]">
+    © 2025 Charles Street Picnic
+  </footer>
+  </body>
+</html>
