@@ -68,6 +68,18 @@
         background-position: center;
         background-attachment: fixed;
       }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
   <body
@@ -423,7 +435,9 @@
     <footer
       class="bg-[hsl(var(--card))] border-t border-[hsl(var(--border))] text-center py-6 text-sm text-[hsl(var(--muted-foreground))]"
     >
-      © 2025 Charles Street Picnic
+      © 2025 Charles Street Picnic<br>
+      <span class="text-xs"><a href="https://www.vecteezy.com/free-vector/background" class="hover:text-[hsl(var(--primary))] transition-colors">Background Vectors by Vecteezy</a></span>
+      <span class="sr-only">Background image: Background Vectors by Vecteezy</span>
     </footer>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
