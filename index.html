@@ -1,93 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Charles Street Picnic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Charles Street Picnic</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Custom design tokens -->
-<style>
-:root {
-  --background: 0 0% 98%;
-  --foreground: 0 0% 15%;
+    <!-- Custom design tokens -->
+    <style>
+      :root {
+        --background: 0 0% 98%;
+        --foreground: 0 0% 15%;
 
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 15%;
 
-  --primary: 0 75% 55%;
-  --primary-foreground: 0 0% 98%;
+        --primary: 0 75% 55%;
+        --primary-foreground: 0 0% 98%;
 
-  --secondary: 0 0% 96%;
-  --secondary-foreground: 0 75% 55%;
+        --secondary: 0 0% 96%;
+        --secondary-foreground: 0 75% 55%;
 
-  --muted: 0 0% 94%;
-  --muted-foreground: 0 0% 45%;
+        --muted: 0 0% 94%;
+        --muted-foreground: 0 0% 45%;
 
-  --accent: 210 20% 85%;
-  --accent-foreground: 0 0% 15%;
+        --accent: 210 20% 85%;
+        --accent-foreground: 0 0% 15%;
 
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
 
-  --border: 0 0% 88%;
-  --input: 0 0% 92%;
-  --ring: 0 75% 55%;
+        --border: 0 0% 88%;
+        --input: 0 0% 92%;
+        --ring: 0 75% 55%;
 
-  --picnic-red: 0 75% 55%;
-  --picnic-burgundy: 0 60% 40%;
-  --picnic-pink: 0 45% 85%;
-  --picnic-cream: 45 25% 95%;
-  --picnic-navy: 215 25% 25%;
-}
+        --picnic-red: 0 75% 55%;
+        --picnic-burgundy: 0 60% 40%;
+        --picnic-pink: 0 45% 85%;
+        --picnic-cream: 45 25% 95%;
+        --picnic-navy: 215 25% 25%;
+      }
 
-.dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
-}
-</style>
-
+      .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+        --primary: 210 40% 98%;
+        --primary-foreground: 222.2 47.4% 11.2%;
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 212.7 26.8% 83.9%;
+      }
+    </style>
   </head>
-  <body class="min-h-screen flex flex-col bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
-
+  <body
+    class="min-h-screen flex flex-col bg-[hsl(var(--background))] text-[hsl(var(--foreground))]"
+  >
     <!-- ░░ Navbar ░░ -->
     <nav class="bg-[hsl(var(--card))] border-b border-[hsl(var(--border))]">
-      <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
-        <a href="index.html" class="text-xl font-semibold text-[hsl(var(--primary))]">
+      <div
+        class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold text-[hsl(var(--primary))]"
+        >
           Charles Street Picnic
         </a>
         <ul class="flex gap-6 text-sm font-medium">
-          <li><a class="hover:text-[hsl(var(--primary))]" href="index.html">Home</a></li>
-          <li><a class="hover:text-[hsl(var(--primary))]" href="faq.html">FAQ</a></li>
-          <li><a class="hover:text-[hsl(var(--primary))]" href="contact.html">Contact</a></li>
+          <li>
+            <a class="hover:text-[hsl(var(--primary))]" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[hsl(var(--primary))]" href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <a class="hover:text-[hsl(var(--primary))]" href="contact.html"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- ░░ Hero ░░ -->
     <header class="relative">
-      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=60"
-           alt="Picnic table hero"
-           class="w-full max-h-[60vh] object-cover brightness-75">
-      <h1 class="absolute inset-0 grid place-items-center text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg text-center px-4">
+      <img
+        src="assets/concrete_block.jpg"
+        alt="Picnic table hero"
+        class="w-full max-h-[60vh] object-cover brightness-75"
+      />
+      <!-- <h1 class="absolute inset-0 grid place-items-center text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg text-center px-4">
         Take a seat at the unexpected
-      </h1>
+      </h1> -->
     </header>
 
     <!-- ░░ Main ░░ -->
@@ -99,47 +116,94 @@
         <!-- Two-column wrapper -->
         <div class="grid gap-10 lg:grid-cols-2">
           <!-- ░░ Column 1 — Form ░░ -->
-          <div class="rounded-lg border border-[hsl(var(--picnic-red)/0.3)] bg-[hsl(var(--card))] shadow-sm p-8">
-            <h3 class="text-2xl font-semibold flex items-center gap-2 mb-6 text-[hsl(var(--primary))]">
+          <div
+            class="rounded-lg border border-[hsl(var(--picnic-red)/0.3)] bg-[hsl(var(--card))] shadow-sm p-8"
+          >
+            <h3
+              class="text-2xl font-semibold flex items-center gap-2 mb-6 text-[hsl(var(--primary))]"
+            >
               <!-- outline icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4h9" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 flex-none"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 20h9"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4h9"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12h18"
+                />
               </svg>
               Sign Our Guest Book
             </h3>
 
-            <form method="POST"
-                  action="https://YOUR-STATICMAN-INSTANCE.onrender.com/v3/entry/github/YOUR_USER/YOUR_REPO/main/guestbook"
-                  class="space-y-5">
+            <form
+              method="POST"
+              action="https://YOUR-STATICMAN-INSTANCE.onrender.com/v3/entry/github/YOUR_USER/YOUR_REPO/main/guestbook"
+              class="space-y-5"
+            >
               <div>
-                <label class="block text-sm font-medium mb-1" for="name">Your Name</label>
-                <input id="name" name="name" required
-                       class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2" 
-                       placeholder="Enter your name">
+                <label class="block text-sm font-medium mb-1" for="name"
+                  >Your Name</label
+                >
+                <input
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2"
+                  placeholder="Enter your name"
+                />
               </div>
 
               <div>
-                <label class="block text-sm font-medium mb-1" for="message">Your Message</label>
-                <textarea id="message" name="message" rows="4" required
-                          class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2"
-                          placeholder="Share your thoughts about the project…"></textarea>
+                <label class="block text-sm font-medium mb-1" for="message"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2"
+                  placeholder="Share your thoughts about the project…"
+                ></textarea>
               </div>
 
               <div>
-                <label class="block text-sm font-medium mb-1" for="email">Email (optional)</label>
-                <input id="email" type="email" name="email"
-                       class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2"
-                       placeholder="you@example.com">
+                <label class="block text-sm font-medium mb-1" for="email"
+                  >Email (optional)</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  class="w-full rounded-md border border-[hsl(var(--border))] bg-[hsl(var(--input))] px-3 py-2"
+                  placeholder="you@example.com"
+                />
               </div>
 
-              <div class="g-recaptcha" data-sitekey="6LcSI4ErAAAAABsscBJEKJBR29DpGcQrTrqB-Ptq"></div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LcSI4ErAAAAABsscBJEKJBR29DpGcQrTrqB-Ptq"
+              ></div>
 
-              <button type="submit"
-                      class="w-full text-center font-medium rounded-md px-4 py-2 
-                             text-[hsl(var(--primary-foreground))] 
-                             bg-[hsl(var(--picnic-red))] hover:bg-[hsl(var(--picnic-burgundy))] transition">
+              <button
+                type="submit"
+                class="w-full text-center font-medium rounded-md px-4 py-2 text-[hsl(var(--primary-foreground))] bg-[hsl(var(--picnic-red))] hover:bg-[hsl(var(--picnic-burgundy))] transition"
+              >
                 Add My Message
               </button>
             </form>
@@ -147,11 +211,23 @@
 
           <!-- ░░ Column 2 — Message List ░░ -->
           <div class="space-y-6">
-            <h3 class="text-2xl font-semibold flex items-center gap-2 text-[hsl(var(--foreground))]">
+            <h3
+              class="text-2xl font-semibold flex items-center gap-2 text-[hsl(var(--foreground))]"
+            >
               <!-- heart icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-none text-[hsl(var(--primary))]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 flex-none text-[hsl(var(--primary))]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364l-7.682-7.682a4.5 4.5 0 010-6.364z"
+                />
               </svg>
               Community Messages
             </h3>
@@ -169,7 +245,9 @@
     </main>
 
     <!-- ░░ Footer ░░ -->
-    <footer class="bg-[hsl(var(--card))] border-t border-[hsl(var(--border))] text-center py-6 text-sm text-[hsl(var(--muted-foreground))]">
+    <footer
+      class="bg-[hsl(var(--card))] border-t border-[hsl(var(--border))] text-center py-6 text-sm text-[hsl(var(--muted-foreground))]"
+    >
       © 2025 Charles Street Picnic
     </footer>
 
