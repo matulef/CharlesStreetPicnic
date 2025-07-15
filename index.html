@@ -4,8 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Charles Street Picnic</title>
+    <meta name="description" content="A unique street art installation in NYC's West Village - a picnic table on Charles Street creating community space and covering an ugly concrete block.">
+    <meta name="keywords" content="Charles Street, West Village, NYC street art, picnic table, community space, New York City, street installation">
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Charles Street Picnic">
+    <meta property="og:description" content="A unique street art installation in NYC's West Village - a picnic table on Charles Street creating community space and covering an ugly concrete block.">
+    <meta property="og:image" content="https://charlesstreetpicnic.com/assets/csp_closeup.jpg">
+    <meta property="og:url" content="https://charlesstreetpicnic.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- Custom design tokens -->
     <style>
@@ -119,12 +129,9 @@
     <header class="relative">
       <img
         src="assets/csp_closeup.jpg"
-        alt="Picnic table hero"
+        alt="Charles Street Picnic table in NYC West Village street art installation"
         class="w-full max-h-[60vh] object-cover brightness-75"
       />
-      <!-- <h1 class="absolute inset-0 grid place-items-center text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg text-center px-4">
-        Take a seat at the unexpected
-      </h1> -->
     </header>
 
     <!-- ░░ Main ░░ -->
@@ -440,6 +447,30 @@
       <span class="text-xs"><a href="https://www.vecteezy.com/free-vector/background" class="hover:text-[hsl(var(--primary))] transition-colors">Background Vectors by Vecteezy</a></span>
       <span class="sr-only">Background image: Background Vectors by Vecteezy</span>
     </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Charles Street Picnic",
+      "description": "A unique street art installation in NYC's West Village - a picnic table creating community space",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "47 Charles St",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.735116",
+        "longitude": "-74.003016"
+      },
+      "url": "https://charlesstreetpicnic.com",
+      "sameAs": "https://instagram.com/charlesstreetpicnic"
+    }
+    </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="assets/guestbook.js"></script>
